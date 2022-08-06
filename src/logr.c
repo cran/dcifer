@@ -12,7 +12,7 @@
 
 SEXP logReval(SEXP Rreval, SEXP Rneval, SEXP Rnm)
 {
-  int neval, nm, nn, i, j, ntemp, mtemp, ikeep, shift;
+  int neval, nm, nn, i, j, mtemp, ikeep, shift;
   double rtemp, stemp;
   int *m1, *nmid;
   double *reval, *logr, *log1r, *sum1r;
@@ -37,21 +37,17 @@ SEXP logReval(SEXP Rreval, SEXP Rneval, SEXP Rnm)
 
   shift = 0;
   for (j = 0; j < neval; j++) {
-    ntemp = nm;
     mtemp = 0;
     stemp = 0;
     ikeep = 0;
     for (i = 0; i < nm; i++) {
       rtemp = reval[shift + i];
-      if (rtemp == 0) {
-	ntemp--;
-      } else if (rtemp == 1) {
+      if (rtemp == 1) {
 	mtemp++;
-	ntemp--;
-      } else {
-	logr[ shift + ikeep] = log(rtemp);
-	log1r[shift + ikeep] = log(1 - rtemp);
-	stemp       += log1r[shift + ikeep];
+      } else if (rtemp != 0) { 
+	logr[ shift + ikeep] = log(rtemp);  
+	log1r[shift + ikeep] = log(1 - rtemp); 
+	stemp       += log1r[shift + ikeep];  
 	ikeep++;
       }
     }
