@@ -1,7 +1,7 @@
 Package: dcifer
 Type: Package
 Title: Genetic Relatedness Between Polyclonal Infections
-Version: 1.1.0
+Version: 1.1.1
 Authors@R: 
     person("Inna", "Gerlovina", 
            role = c("aut", "cre"),
@@ -21,7 +21,7 @@ Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
 Depends: R (>= 3.5.0)
 NeedsCompilation: yes
-Packaged: 2022-08-05 07:15:56 UTC; innars
+Packaged: 2022-08-09 02:46:27 UTC; innars
 Author: Inna Gerlovina [aut, cre] (<https://orcid.org/0000-0002-7772-7473>)
 Repository: CRAN
-Date/Publication: 2022-08-06 07:30:10 UTC
+Date/Publication: 2022-08-10 15:50:14 UTC

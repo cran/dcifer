@@ -1,4 +1,4 @@
-dfaace8de0101f37b8f94745924f71dc *DESCRIPTION
+b395f1e4433d99023a56f2aaba6e1b05 *DESCRIPTION
 2427c6580f24e050a4a45a593e082f69 *LICENSE
 f5b4d94fa1d70f607eb07a13f76b84a3 *NAMESPACE
 e6541a6ce3db20384c07a9cf3fbe2160 *NEWS.md
@@ -13,7 +13,7 @@ c6a70a5a2babf1215a1b8fff5ba5323c *data/dres.RData
 8481d17114cdac626b37998add2a2f30 *data/revals.RData
 a92bad66bd010355b91d2af4d900ef08 *inst/doc/vignetteDcifer.R
 97b47b3320d728322d1cb60b53ec5581 *inst/doc/vignetteDcifer.Rmd
-6b4a6c198d63dfd7f04a0ba60b988ea1 *inst/doc/vignetteDcifer.pdf
+4934a5b9f93bed2367c52028257cbf34 *inst/doc/vignetteDcifer.pdf
 7e1f284f06b75aaa68047aabb3270c2e *inst/extdata/MozAfreq.csv
 b77de41fa0b93df5b8158f3902090046 *inst/extdata/MozParagon.csv
 e91bea8aca198a5c852be3a358f75a7b *man/calcAfreq.Rd
@@ -33,13 +33,13 @@ e677853932aecc7f49c729ffe6bab856 *man/probUxUy.Rd
 5f4c9ba7ffce51312870a5e23cb94a5e *man/revals.Rd
 852ddcd34d7539faad99759d2e9c7d7c *src/dcifer-init.c
 15a1d62ba65a6a99a5481785bcddf7d4 *src/llik.h
-9bb52069469cf481af5c5c2eac6f89f0 *src/logr.c
+1244bc279772f7560a34c7a920431811 *src/logr.c
 c454086d65b8e155dbf699a96a8b513d *src/pSxSy.c
 cbdd7fc038655f4fb6940371546e1619 *src/pUxUy.c
 6716ce486cd837878a678fc07741782c *src/pUxUy0.c
 a15713b0d64eaf25eab91c520af9eb33 *src/pUxUy0M1.c
 e6688a34732b48691cfe51761c31caeb *src/pUxUyEqr.c
 21e157a3d22f1c127270bb167483bbad *src/pUxUyM1.c
-0440458320b70235feec3e4024acd3fe *vignettes/dciferpkg.bib
+f3ed41e428028f8d8f9ea745721636fe *vignettes/dciferpkg.bib
 5955fd8fb9adb772ed7a137b556f1491 *vignettes/vancouver-brackets.csl
 97b47b3320d728322d1cb60b53ec5581 *vignettes/vignetteDcifer.Rmd
