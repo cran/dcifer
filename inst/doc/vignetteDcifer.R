@@ -14,6 +14,9 @@ sfile <- system.file("extdata", "MozParagon.csv", package = "dcifer")
 dsmp <- readDat(sfile, svar = "sampleID", lvar = "locus", avar = "allele")
 str(dsmp, list.len = 2)
 
+## ---- eval = FALSE------------------------------------------------------------
+#  dsmp <- formatDat(dlong, svar = "sampleID", lvar = "locus", avar = "allele")
+
 ## -----------------------------------------------------------------------------
 # optionally, extract location information
 meta <- unique(read.csv(sfile)[c("sampleID", "province")])
@@ -29,7 +32,13 @@ str(afreq, list.len = 2)
 
 ## -----------------------------------------------------------------------------
 afile  <- system.file("extdata", "MozAfreq.csv", package = "dcifer")
-afreq2 <- readAfreq(afile, lvar = "locus", avar = "allele", fvar = "freq")  
+afreq2 <- readAfreq(afile, lvar = "locus", avar = "allele", fvar = "freq") 
+
+## ---- eval = FALSE------------------------------------------------------------
+#  # alternatively, if allele frequencies are provided in an R data frame (aflong):
+#  afreq2 <- formatAfreq(aflong, lvar = "locus", avar = "allele", fvar = "freq")
+
+## -----------------------------------------------------------------------------
 dsmp2  <- matchAfreq(dsmp, afreq2)
 
 ## -----------------------------------------------------------------------------

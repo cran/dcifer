@@ -1,3 +1,12 @@
+
+# dcifer 1.2.0
+
+- Functions `formatDat()` and `formatAfreq()` that reformat data frames containing sample data and population allele frequencies in long formats are added. 
+
+# dcifer 1.1.1
+
+- Fix: `logReval()` now covers all relevant edge cases. 
+
 # dcifer 1.1.0
 
 - Special case added: loci with no shared alleles (more efficient);
